@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #292929;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.main-container {
+    display: flex;
+    margin: 45px;
+}
+
+.main-container h1 {
+    color: rgba(255, 255, 255, 0.87);
+    font-weight: 700;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.main-container h2 {
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 500;
+    font-size: 25px;
+    margin-bottom: 20px;
+}

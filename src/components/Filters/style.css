@@ -1,0 +1,31 @@
+.filters-container {
+    padding: 25px;
+    padding-right: 35px;
+    margin-right: 35px;
+    border-radius: 15px;
+    background-color: #131313;
+}
+
+.filters-container .header {
+    margin-bottom: 45px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #CBCBCB;
+}
+
+.filters-container .header span {
+    font-size: 20px;
+    font-weight: 300;
+    color: #a5a5a5;
+}
+
+.filters-container .dropdowns {
+    color: #ffffff;
+}
+
+.filters-container .dropdowns div {
+    width: 170px;
+    padding: 8px 13px;
+    margin-bottom: 12px;
+    border-radius: 5px;
+    background-color: #232323;
+}
