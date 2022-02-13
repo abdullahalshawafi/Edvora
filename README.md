@@ -28,6 +28,8 @@ A simple web page built with React.js as a fulfillment to Edvora's Internship hi
 
 ![Preview 1](screenshots/preview-1.png)
 
+<div style="text-align: center"><img src="screenshots/preview-2.gif" alt="Preview 2" ></div>
+
 ## Files Structure
 
 ``` bash
