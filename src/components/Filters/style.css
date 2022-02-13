@@ -1,7 +1,8 @@
 .filters-container {
+    float: left;
     padding: 25px;
     padding-right: 35px;
-    margin-right: 35px;
+    margin-right: 20px;
     border-radius: 15px;
     background-color: #131313;
 }

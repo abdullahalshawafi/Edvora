@@ -1,0 +1,64 @@
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-width: 250px;
+    padding: 13px;
+    border-radius: 4.68775px;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: #232323;
+    transition: transform 0.3s ease-out;
+    cursor: pointer;
+}
+
+.card-container:hover {
+    transform: scale(1.08);
+}
+
+.col-1 {
+    grid-column: 1 / 2;
+}
+
+.col-2 {
+    grid-column: 2 / 3;
+}
+
+.col-full {
+    grid-column: 1 / -1;
+}
+
+.card-container .img-wrapper {
+    grid-row: 1 / 4;
+    width: 70px;
+    height: 70px;
+}
+
+.card-container .img-wrapper img {
+    max-width: 100%;
+    min-height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.card-container .product-name {
+    font-size: 15px;
+    color: #ffffff;
+}
+
+.card-container .price {
+    color: #ffffff;
+}
+
+.card-container .price span {
+    font-size: 16px;
+    margin-right: 3.5px;
+}
+
+.card-container .location {
+    max-width: 90px;
+}
+
+.card-container .location,
+.card-container .date {
+    margin: 10px 0;
+}

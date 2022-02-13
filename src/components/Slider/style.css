@@ -1,0 +1,15 @@
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+.slider {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    display: flex;
+    padding: 20px;
+    margin-bottom: 45px;
+    gap: 20px;
+    border-radius: 15px;
+    overflow-x: scroll;
+    background-color: #131313;
+}
