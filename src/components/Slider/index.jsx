@@ -6,14 +6,13 @@ import { useRef } from "react";
 function Slider({ data }) {
   const sliderRef = useRef();
   const scroll = (scrollOffset) => {
-    console.log(sliderRef.current.scrollLeft);
     sliderRef.current.scrollLeft += scrollOffset;
   };
 
   return (
     <div className="slider-container ">
       <div className="slider" ref={sliderRef}>
-        {data.map((item, idx) => (
+        {data?.map((item, idx) => (
           <Card key={idx} data={item} />
         ))}
       </div>

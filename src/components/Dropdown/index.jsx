@@ -2,12 +2,11 @@ import { useEffect, useState } from "react";
 import downArrow from "../../assets/down-arrow.svg";
 import "./style.css";
 
-function Dropdown({ title, list }) {
+function Dropdown({ title, list, setSelectedItem }) {
   const [isOpen, toggle] = useState(false);
 
   useEffect(() => {
     const handleWindowClick = (event) => {
-      console.log(event.target.id);
       if (event.target.id !== title && isOpen) {
         toggle(false);
       }
@@ -32,8 +31,14 @@ function Dropdown({ title, list }) {
         <img src={downArrow} alt="down arrow" />
       </div>
       <div className="dropdown-menu">
-        {list.map((item, idx) => (
-          <div key={idx} className="dropdown-item">
+        {list?.map((item, idx) => (
+          <div
+            key={idx}
+            className="dropdown-item"
+            onClick={() => {
+              setSelectedItem(item);
+            }}
+          >
             {item}
           </div>
         ))}

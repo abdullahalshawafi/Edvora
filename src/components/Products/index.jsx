@@ -4,7 +4,7 @@ import "./style.css";
 function Products({ products, productsNames }) {
   return (
     <div className="products-container">
-      {productsNames.map((productName) => (
+      {productsNames?.map((productName) => (
         <div className="product" key={productName}>
           <div className="product-name">
             <span>{productName}</span>
