@@ -14,6 +14,7 @@ function Main() {
       setProductsNames(productsNames);
     });
   }, []);
+
   return (
     <div className="main-container">
       <Filters />

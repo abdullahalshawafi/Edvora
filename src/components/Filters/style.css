@@ -1,5 +1,6 @@
 .filters-container {
-    float: left;
+    /* float: left; */
+    height: fit-content;
     padding: 25px;
     padding-right: 35px;
     margin-right: 20px;

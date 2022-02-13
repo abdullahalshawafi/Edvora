@@ -10,14 +10,19 @@ body {
 }
 
 .main-container {
+    display: flex;
     margin: 45px;
+}
+
+.main-container>div:nth-child(2) {
+    overflow-x: hidden;
 }
 
 .main-container h1 {
     color: rgba(255, 255, 255, 0.87);
     font-weight: 700;
     font-size: 35px;
-    margin-left: 266px;
+    margin-left: 16px;
     margin-bottom: 20px;
 }
 
@@ -25,6 +30,6 @@ body {
     color: rgba(255, 255, 255, 0.5);
     font-weight: 500;
     font-size: 25px;
-    margin-left: 266px;
+    margin-left: 16px;
     margin-bottom: 20px;
 }
