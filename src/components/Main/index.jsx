@@ -10,6 +10,7 @@ import {
 import "./style.css";
 
 function Main() {
+  const [allProducts, setAllProducts] = useState({});
   const [products, setProducts] = useState({});
 
   const [productsNames, setProductsNames] = useState([]);
@@ -23,6 +24,7 @@ function Main() {
   useEffect(() => {
     getProducts().then(
       ([productsNames, productsStates, productsCities, products]) => {
+        setAllProducts(products);
         setProducts(products);
         setProductsNames(productsNames);
         setProductsStates(productsStates);
@@ -32,12 +34,12 @@ function Main() {
   }, []);
 
   useEffect(() => {
-    const [names, states, cities, newProducts] = filterByProduct(
-      products,
+    const [, states, cities, newProducts] = filterByProduct(
+      allProducts,
       selectedProduct
     );
+
     setProducts(newProducts);
-    setProductsNames(names);
     setProductsStates(states);
     setProductsCities(cities);
 
@@ -45,12 +47,12 @@ function Main() {
   }, [selectedProduct]);
 
   useEffect(() => {
-    const [names, states, cities, newProducts] = filterByState(
-      products,
+    const [, states, cities, newProducts] = filterByState(
+      allProducts,
       selectedState
     );
+
     setProducts(newProducts);
-    setProductsNames(names);
     setProductsStates(states);
     setProductsCities(cities);
 
@@ -58,12 +60,12 @@ function Main() {
   }, [selectedState]);
 
   useEffect(() => {
-    const [names, states, cities, newProducts] = filterByCity(
-      products,
+    const [, states, cities, newProducts] = filterByCity(
+      allProducts,
       selectedCity
     );
+
     setProducts(newProducts);
-    setProductsNames(names);
     setProductsStates(states);
     setProductsCities(cities);
 
@@ -86,7 +88,7 @@ function Main() {
       <div>
         <h1>Edvora</h1>
         <h2>Products</h2>
-        <Products products={products} productsNames={productsNames} />
+        <Products products={products} />
       </div>
     </div>
   );

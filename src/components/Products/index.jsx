@@ -1,10 +1,10 @@
 import Slider from "../Slider";
 import "./style.css";
 
-function Products({ products, productsNames }) {
+function Products({ products }) {
   return (
     <div className="products-container">
-      {productsNames?.map((productName) => (
+      {Object.keys(products)?.map((productName) => (
         <div className="product" key={productName}>
           <div className="product-name">
             <span>{productName}</span>
