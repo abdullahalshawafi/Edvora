@@ -7,17 +7,27 @@ import "./style.css";
 function Main() {
   const [products, setProducts] = useState({});
   const [productsNames, setProductsNames] = useState([]);
+  const [productsStates, setProductsStates] = useState([]);
+  const [productsCities, setProductsCities] = useState([]);
 
   useEffect(() => {
-    getProducts().then(([productsNames, products]) => {
-      setProducts(products);
-      setProductsNames(productsNames);
-    });
+    getProducts().then(
+      ([productsNames, productsStates, productsCities, products]) => {
+        setProducts(products);
+        setProductsNames(productsNames);
+        setProductsStates(productsStates);
+        setProductsCities(productsCities);
+      }
+    );
   }, []);
 
   return (
     <div className="main-container">
-      <Filters />
+      <Filters
+        products={productsNames}
+        states={productsStates}
+        cities={productsCities}
+      />
       <div>
         <h1>Edvora</h1>
         <h2>Products</h2>

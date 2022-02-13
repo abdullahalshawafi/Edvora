@@ -1,5 +1,4 @@
 .filters-container {
-    /* float: left; */
     height: fit-content;
     padding: 25px;
     padding-right: 35px;
@@ -22,12 +21,4 @@
 
 .filters-container .dropdowns {
     color: #ffffff;
-}
-
-.filters-container .dropdowns div {
-    width: 170px;
-    padding: 8px 13px;
-    margin-bottom: 12px;
-    border-radius: 5px;
-    background-color: #232323;
 }

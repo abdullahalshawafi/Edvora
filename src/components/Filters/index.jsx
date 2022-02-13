@@ -1,15 +1,16 @@
+import Dropdown from "../Dropdown";
 import "./style.css";
 
-function Filters() {
+function Filters({ products, states, cities }) {
   return (
     <div className="filters-container">
       <div className="header">
         <span>Filters</span>
       </div>
       <div className="dropdowns">
-        <div>Products</div>
-        <div>State</div>
-        <div>City</div>
+        <Dropdown title="Products" list={products} />
+        <Dropdown title="State" list={states} />
+        <Dropdown title="City" list={cities} />
       </div>
     </div>
   );

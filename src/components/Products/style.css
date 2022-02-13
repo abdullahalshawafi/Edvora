@@ -3,8 +3,13 @@
     flex-direction: column;
 }
 
+.products-container .product {
+    margin-bottom: 45px;
+}
+
 .products-container .product>.product-name {
     margin-left: 16px;
+    margin-right: 48px;
     margin-bottom: 15px;
     padding-bottom: 15px;
     font-family: 'Roboto', sans-serif;

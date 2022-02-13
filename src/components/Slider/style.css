@@ -2,14 +2,24 @@
     display: none;
 }
 
-.slider {
+.slider-container {
+    display: flex;
+    align-items: center;
+}
+
+.slider-container .slider {
     -ms-overflow-style: none;
     scrollbar-width: none;
     display: flex;
     padding: 20px;
-    margin-bottom: 45px;
     gap: 20px;
     border-radius: 15px;
     overflow-x: scroll;
     background-color: #131313;
+    scroll-behavior: smooth;
+}
+
+.slider-container .arrow-wrapper {
+    margin-left: 36px;
+    cursor: pointer;
 }
